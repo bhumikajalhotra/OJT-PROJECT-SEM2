@@ -183,7 +183,20 @@ button:hover{
     }
 
     header h1{
-        font-size:32px;
+        font-size:30px;
+    }
+
+    .categories{
+        gap:8px;
+    }
+
+    button{
+        padding:12px;
+        font-size:14px;
+    }
+
+    #newsContainer{
+        grid-template-columns:1fr;
     }
 
 }
