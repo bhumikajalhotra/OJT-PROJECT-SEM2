@@ -187,3 +187,17 @@ button:hover{
     }
 
 }
+
+footer{
+    text-align:center;
+    padding:18px;
+    margin-top:40px;
+    background:#1e272e;
+    color:white;
+    letter-spacing:1px;
+}
+
+.read-more:hover{
+    opacity:0.9;
+    transform:scale(1.05);
+}
