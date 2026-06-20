@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewsSphere</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🌍 NewsSphere</h1>
+        <p>Your Daily Dose Of Global Updates</p>
+    </header>
+
+    <section class="controls">
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search latest news..."
+        >
+
+        <button id="searchBtn">Search</button>
+    </section>
+
+    <section class="categories">
+        <button class="category active" data-category="general">General</button>
+        <button class="category" data-category="technology">Tech</button>
+        <button class="category" data-category="sports">Sports</button>
+        <button class="category" data-category="health">Health</button>
+        <button class="category" data-category="business">Business</button>
+    </section>
+
+    <div id="loading" class="hidden">
+        <div class="spinner"></div>
+    </div>
+
+    <div id="error"></div>
+
+    <section id="newsContainer"></section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,189 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    min-height:100vh;
+    padding:20px;
+    background:linear-gradient(135deg,#dfe9f3,#ffffff);
+}
+
+/* HEADER */
+
+header{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+header h1{
+    font-size:42px;
+    margin-bottom:10px;
+    color:#222;
+}
+
+header p{
+    color:#555;
+    font-size:18px;
+}
+
+/* SEARCH */
+
+.controls{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    flex-wrap:wrap;
+    margin-bottom:25px;
+}
+
+input{
+    width:350px;
+    padding:14px;
+    border:none;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+    font-size:15px;
+}
+
+button{
+    padding:14px 20px;
+    border:none;
+    cursor:pointer;
+    border-radius:10px;
+    background:#0077ff;
+    color:white;
+    transition:0.3s;
+}
+
+button:hover{
+    transform:translateY(-2px);
+}
+
+/* CATEGORY */
+
+.categories{
+    display:flex;
+    justify-content:center;
+    gap:12px;
+    margin-bottom:30px;
+    flex-wrap:wrap;
+}
+
+.category{
+    background:#6c5ce7;
+}
+
+.active{
+    background:#2d3436;
+}
+
+/* LOADING */
+
+#loading{
+    display:flex;
+    justify-content:center;
+    margin:30px;
+}
+
+.spinner{
+    width:45px;
+    height:45px;
+    border:5px solid #ddd;
+    border-top:5px solid #0077ff;
+    border-radius:50%;
+    animation:spin 1s linear infinite;
+}
+
+@keyframes spin{
+    100%{
+        transform:rotate(360deg);
+    }
+}
+
+.hidden{
+    display:none !important;
+}
+
+/* ERROR */
+
+#error{
+    text-align:center;
+    color:red;
+    margin-bottom:20px;
+    font-size:18px;
+}
+
+/* NEWS GRID */
+
+#newsContainer{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:25px;
+}
+
+/* CARD */
+
+.card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.content{
+    padding:18px;
+}
+
+.content h3{
+    margin-bottom:12px;
+    font-size:20px;
+    color:#222;
+}
+
+.content p{
+    margin-bottom:12px;
+    color:#555;
+    line-height:1.4;
+}
+
+.date{
+    font-size:14px;
+    color:gray;
+}
+
+.read-more{
+    display:inline-block;
+    text-decoration:none;
+    padding:10px 14px;
+    background:#00b894;
+    color:white;
+    border-radius:8px;
+}
+
+/* MOBILE */
+
+@media(max-width:600px){
+
+    input{
+        width:100%;
+    }
+
+    header h1{
+        font-size:32px;
+    }
+
+}
