@@ -25,7 +25,7 @@ async function fetchNews(keyword = "technology") {
         const data = await response.json();
 
         if (data.status !== "ok") {
-            error.innerText = "API Error. Check API key.";
+            error.innerText = "News service unavailable. Please check API configuration.";
             return;
         }
 
@@ -35,7 +35,7 @@ async function fetchNews(keyword = "technology") {
 
     catch (err) {
 
-        error.innerText = "Failed to fetch news.";
+        error.innerText = "Unable to fetch latest news. Please try again.";
 
     }
 
