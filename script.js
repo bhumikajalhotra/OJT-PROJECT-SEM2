@@ -114,6 +114,9 @@ searchBtn.addEventListener("click", () => {
     if (keyword) {
         fetchNews(keyword);
     }
+    else{
+        error.innerText = "Please enter a keyword to search news.";
+    }
 
 });
 
