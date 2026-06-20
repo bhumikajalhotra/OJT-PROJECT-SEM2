@@ -79,11 +79,13 @@ function displayNews(articles) {
 
         <div class="content">
 
-            <h3>${article.title}</h3>
+           <h3>${article.title}</h3>
 
-            <p>
-                ${article.description || "No description available"}
-            </p>
+           <p><strong>Source:</strong> ${article.source.name}</p>
+
+           <p>
+               ${article.description || "No description available"}
+           </p>
 
             <p class="date">${date}</p>
 
